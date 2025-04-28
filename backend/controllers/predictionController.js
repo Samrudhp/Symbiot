@@ -72,7 +72,7 @@ export const predictCropAdvice = async (req, res) => {
       });
       
       // Fallback to basic logic if Gemini API fails
-      console.log("Using fallback prediction logic");
+    
       
       // Convert sensor value to moisture percentage for human understanding
       // Using your scale: 0-300 super moist, 300-700 moist, 700+ dry
