@@ -91,3 +91,9 @@ app.use("/api/v1/auth",authRoutes);
 // app.use("/api/v1/posts",postRoutes);
 // app.use("/api/v1/notifications",notificationRoutes);
 // app.use("/api/v1/connections",connectionRoutes);
+
+// Add this line to debug:
+console.log("Loading prediction routes...");
+import predictionRoutes from './routes/predictionRoutes.js';
+app.use('/api/v1/predictions', predictionRoutes);
+console.log("Prediction routes loaded!");

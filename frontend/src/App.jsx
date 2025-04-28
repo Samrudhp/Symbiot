@@ -6,6 +6,8 @@ import SignUp from "./pages/signup";
 import DiseasePrediction from "./pages/test";
 import AgricultureDashboard from "./pages/farmerDashboard";
 import FarmerDataCollectionForm from "./pages/onboarding";
+import CropPrediction from "./pages/CropPrediction";
+
 
 
 
@@ -21,6 +23,8 @@ function App() {
         <Route path="/test"  element={<DiseasePrediction/>}/>
         <Route path="/agri-dash" element={<AgricultureDashboard/>}/>
         <Route path="/main" element={<FarmerDataCollectionForm/>}/>
+        <Route path="/crop-prediction" element={<CropPrediction/>}/>
+        
       </Routes>
       </Router>
   );
